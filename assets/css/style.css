@@ -1,6 +1,7 @@
 :root {
     --background: rgb(50, 52, 60);
     --foreground: rgb(158,202,204);
+    --linkBorder: 3px solid;
 }
 
 body {
@@ -9,11 +10,22 @@ body {
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+    font-size: 125%;
+}
+
 h1 {
     font-size: 250%;
 }
+
 h2 {
     font-size: 150%;
+}
+
+.bottomBorder {
+    padding: 0 10px 0 10px;
+    margin: 0 5px;
 }
 
 header {
@@ -27,11 +39,11 @@ header {
     height: 80px;
 }
 header h1 {
-    
+    flex: 0 0 350px;
     background-color: var(--foreground);
     color: var(--background);
     padding-left: 10%;
-    width: 25%;
+    width: 350px;
 }
 
 nav {
@@ -39,8 +51,9 @@ nav {
 }
     nav ul li{
         display: inline-block;
-        padding: 0 15px 0 15px;
         text-align: center;
+        height: 100%;
+        border-bottom: var(--linkBorder) var(--foreground);
     }
     nav ul li a {
         color:var(--foreground);
@@ -86,13 +99,18 @@ article .description {
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    justify-content: space-evenly;
+
 }
 
 #contactList ul li {
-    flex: 1 0 150px;
     display: inline-block;
     padding-top:30px;
     height: 75px;
+    border-bottom: var(--linkBorder) var(--background);
+}
+#contactList ul li a {
+    color: var(--background)
 }
 
 
@@ -159,5 +177,12 @@ footer{
     article .description {
         border: 0;
     }
-
+}
+@media screen and (max-width: 674px) {
+    header h1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
 }
