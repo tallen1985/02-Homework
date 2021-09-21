@@ -5,7 +5,7 @@
     --mainBackground: rgb(237,237,245);
     --linkBorder: 3px solid;
 }
-/* Tag Selectors */
+/* Tag Selector Styling */
 body {
     background-color: var(--mainBackground);
     font-family:Arial, Helvetica, sans-serif;
@@ -24,7 +24,7 @@ h1 {
 h2 {
     font-size: 150%;
 }
-
+/* Class Selector Styling */
 .bottomBorderLink {
     padding: 30px 10px 10px 10px;
     margin: 0 5px;
@@ -39,11 +39,8 @@ h2 {
         background-position: bottom;
 
     }
-.linkTransition {
-    
-}
 
-    /* Header Styling */
+/* Header Styling */
 header {
     display: flex;
     background-color: var(--background);
@@ -203,9 +200,9 @@ article {
     transition: color .7s;
     color: var(--background);
 }
-#resume img {
-    height:30px;
-}
+    #resume img {
+        height:30px;
+    }
 /* Footer Styling */
 footer{
     display: flex;
@@ -242,5 +239,8 @@ footer{
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+    .bottomBorderLink {
+        padding: 0;
     }
 }
