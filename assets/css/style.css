@@ -72,6 +72,7 @@ nav {
         background-image: linear-gradient(to top, var(--foreground) 50%, var(--background) 50%);
     }
     nav ul li a {
+        transition: color .7s;
         color:var(--foreground);
     }
     nav ul li:hover a{
@@ -186,6 +187,7 @@ article {
         background-image: linear-gradient(to top, var(--background) 50%, var(--mainBackground) 50%);
     }
         #contactList ul li a {
+            transition: color .7s;
             color: var(--background);
         }
         #contactList ul li:hover a {
