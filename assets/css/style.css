@@ -1,10 +1,11 @@
+/* Root for Variable Declaration */
 :root {
-    --background: rgb(50, 52, 60);
+    --background: #25272E;
     --foreground: rgb(158,202,204);
     --mainBackground: rgb(237,237,245);
     --linkBorder: 3px solid;
 }
-
+/* Tag Selectors */
 body {
     background-color: var(--mainBackground);
     font-family:Arial, Helvetica, sans-serif;
@@ -15,7 +16,7 @@ p {
     font-weight: lighter;
 }
 
-a {
+li a {
     text-decoration: none;
     font-size: 125%;
 }
@@ -31,15 +32,15 @@ h2 {
 .bottomBorder {
     padding: 30px 10px 10px 10px;
     margin: 0 5px;
-    
+
     background-size: 100% 200%;
     background-position: top;
     transition: background-position 0.7s ease-in-out;
 }
-.bottomBorder:hover {
-    background-position: bottom;
-}
-
+    /* .bottomBorder:hover {
+        background-position: bottom;
+    } */
+    /* Header Styling */
 header {
     display: flex;
     background-color: var(--background);
@@ -50,14 +51,15 @@ header {
     flex-wrap: wrap;
     height: 80px;
 }
-header h1 {
-    flex: 0 0 350px;
-    background-color: var(--foreground);
-    color: var(--background);
-    padding-left: 10%;
-    width: 350px;
-}
+    header h1 {
+        flex: 0 0 350px;
+        background-color: var(--foreground);
+        color: var(--background);
+        padding-left: 10%;
+        width: 350px;
+    }
 
+/* Navigation Bar Styling */
 nav {
     margin-right: 25px;   
 }
@@ -71,6 +73,7 @@ nav {
         color:var(--foreground);
     }
 
+/* Subtitle Image and Text Styling */
 #subtitle {
     display: flex;
     justify-content: flex-end;
@@ -84,55 +87,36 @@ nav {
         background-color: var(--foreground);
         padding:10px;
     }
-
+/* Article Styling - Each section is a separate article but styled the same*/
 article {
     display: flex;
     width: 90%;
     margin: 25px auto;
     align-items:flex-start;
 }
-article .headline {
-    width:25%;
-    text-align: right;
-    margin: 0 2%;
-    font-size: 150%;
-    color: var(--background);
-    
-}
-article .description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    width:75%;
-    border-left: 5px solid black;
-    padding-left: 5px;
-}
-
-#contactList ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-    justify-content: space-evenly;
-
-}
-
-#contactList ul li {
-    display: inline-block;
-    padding:30px 10px 10px 10px;
-    border-bottom: var(--linkBorder) var(--background);
-    background-image: linear-gradient(to top, var(--background) 50%, var(--mainBackground) 50%);
-}
-#contactList ul li a {
-    color: var(--background)
-}
+    article .headline {
+        width:25%;
+        text-align: right;
+        margin: 0 2%;
+        color: var(--background);
+        
+    }
+    article .description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        width:75%;
+        border-left: 5px solid black;
+        padding-left: 10px;
+    }
 
 
-
+/* Works Section Styling - Provides basic placeholder style that is
+        overruled by specific ID as projects are added */
 .workCard {
     position: relative;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
     position: relative;
     background-image: url(../images/what-is-coding.jpeg);
     height: 150px;
@@ -140,10 +124,13 @@ article .description {
 }
     .workCard div {
         background-color: var(--background);
+        color:var(--foreground);
         position:absolute;
-        bottom: 25px;
-        width: 150px;
-        padding-left: 10px;
+        bottom: 15px;
+        left: 0px;
+        width: max-content;
+        padding: 0 10px;
+        z-index: 2;
     }
     .workCard::after {
         position: absolute;
@@ -153,31 +140,67 @@ article .description {
         bottom: 0;
         z-index: 1;
         content: "";
-        background: rgb(4, 224, 133) 70% 0 repeat-x;
+        background: rgb(4, 198, 224) 70% 0 repeat-x;
         transition: opacity .3s;
         opacity: .4;
     }
 
-.large {
+    .large {
+        width: 100%;
+        height: 250px;
+    }
+    .small {
+        flex: 1 0 300px;
+    }
+    .workCard:hover::after{
+        transition: opacity .3s;
+        opacity: 0;
+    }
+    /* Refactor Project */
+    #refactor {
+        background-image: url(../images/01-Homework-screenshot.jpg);
+        background-size: 100%;
+        background-position-x: 50%;
+    }
+
+/* Contact Section Styling */
+#contactList ul {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 250px;
+    text-align: center;
+    justify-content: space-evenly;
+    
+
 }
-.small {
-    flex: 1 0 300px;
-}
-.workCard:hover::after{
-    transition: opacity .3s;
-    opacity: 0;
-}    
+
+    #contactList ul li {
+        display: inline-block;
+        padding:30px 10px 5px 10px;
+        border-bottom: var(--linkBorder) var(--background);
+        background-image: linear-gradient(to top, var(--background) 50%, var(--mainBackground) 50%);
+    }
+        #contactList ul li a {
+            color: var(--background)
+        }
+
+
+/* Footer Styling */
 footer{
     display: flex;
     background-color: var(--background);
+    color: var(--foreground);
     height: 50px;
     margin: 25px 0;
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width: 768px) {
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 850px) {
+    header {
+        height: 120px;
+    }
     header h1,
     header nav {
       margin: 0 auto;
@@ -196,7 +219,6 @@ footer{
 @media screen and (max-width: 674px) {
     header h1 {
         width: 100%;
-        margin: 0 auto;
         padding: 0;
         text-align: center;
     }
