@@ -163,8 +163,9 @@ article {
     /* Refactor Project */
     #refactor {
         background-image: url(../images/01-Homework-screenshot.jpg);
-        background-size: 100%;
+        background-size: 160%;
         background-position-x: 50%;
+        min-width: 300px;
     }
 
 /* Contact Section Styling */
