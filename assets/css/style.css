@@ -16,10 +16,6 @@ p {
     font-weight: lighter;
 }
 
-li a {
-    text-decoration: none;
-    font-size: 125%;
-}
 
 h1 {
     font-size: 250%;
@@ -29,18 +25,23 @@ h2 {
     font-size: 150%;
 }
 
-.bottomBorder {
+.bottomBorderLink {
     padding: 30px 10px 10px 10px;
     margin: 0 5px;
 
     background-size: 100% 200%;
     background-position: top;
     transition: all 0.7s ease-in-out;
+    text-decoration: none;
+    font-size: 125%;
 }
-    .bottomBorder:hover {
+    .bottomBorderLink:hover {
         background-position: bottom;
 
     }
+.linkTransition {
+    
+}
 
     /* Header Styling */
 header {
@@ -194,7 +195,17 @@ article {
             color: var(--foreground);
         }
 
-
+/* Resume Styling */
+#resume a {
+    margin: 0 auto;
+    padding:30px 10px 5px 10px;
+    border-bottom: var(--linkBorder) var(--background);
+    transition: color .7s;
+    color: var(--background);
+}
+#resume img {
+    height:30px;
+}
 /* Footer Styling */
 footer{
     display: flex;
