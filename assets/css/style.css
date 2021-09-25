@@ -160,6 +160,15 @@ article {
         transition: opacity .3s;
         opacity: 0;
     }
+    /* Password Generator Project */
+    #passwordGenerator {
+        background-color: white;
+        background-image: url(../images/03-Homework-Screenshot.jpg);
+        background-size: 140%;
+        background-position: 50% 20%;
+        background-repeat: no-repeat;
+        min-width: 300px;
+    }
     /* Refactor Project */
     #refactor {
         background-image: url(../images/01-Homework-screenshot.jpg);
