@@ -73,7 +73,7 @@ nav {
         transition: color .7s;
         color:var(--foreground);
     }
-    nav ul li:hover a{
+    nav ul li:active a{
         color: var(--background);
     }
 
@@ -252,5 +252,10 @@ footer{
     }
     .bottomBorderLink {
         padding: 0;
+    }
+}
+@media (hover:hover) {
+    nav ul li:hover a{
+        color: var(--background);
     }
 }
