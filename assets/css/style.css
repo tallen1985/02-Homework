@@ -82,10 +82,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 125px;
+    height: 200px;
     background-color: yellow;
     padding-right: 25px;
     background: url("../images/subtitle.jpg");
+    background-position: center bottom;
     background-attachment: fixed;
 }
     #subtitle h2 {
