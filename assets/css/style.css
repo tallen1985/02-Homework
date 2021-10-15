@@ -163,6 +163,14 @@ article {
         opacity: 0;
     }
     /* Code Quiz Project */
+    #weatherDashboard {
+        background-color: #EDE7D9;
+        background-image: url(../images/06-Homework-screenshot.jpg);
+        background-size: 100%;
+        background-position: 50% 15%;;
+        background-repeat: no-repeat;
+        min-width: 300px;
+    }
     #dayPlanner {
         background-color: #EDE7D9;
         background-image: url(../images/05-Homework-screenshot.jpg);
