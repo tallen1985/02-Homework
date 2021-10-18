@@ -80,7 +80,7 @@ nav {
 /* Subtitle Image and Text Styling */
 #subtitle {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 200px;
     background-color: yellow;
@@ -93,6 +93,14 @@ nav {
         background-color: var(--foreground);
         padding:10px;
     }
+
+#profilePicture {
+    border: 1px solid darkslategray;
+    box-shadow: 3px 3px 3px darkslategray;
+    border-radius: 5px;
+    height: 110%;
+    margin-left: 20px;
+}
 /* Article Styling - Each section is a separate article but styled the same*/
 article {
     display: flex;
