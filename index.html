@@ -42,46 +42,61 @@
                 <h1>Works</h1>
             </div>
             <div class="description">
-                <a class="workCard large" id="weatherDashboard" href="https://tallen1985.github.io/06-Homework-Weather-Dashboard/" target="_blank">
-                    <div >
-                        <div>
+                <div class="workCard large" id="weatherDashboard" data-active=false>
+                        <div class="cardDescription">
                             <h2>Weather Dashboard</h2>
                             <p>Server-side API/LocalStorage/UI-UX Design</p>
                         </div>
-                    </div>
-                </a>
-                <a class="workCard small" id="dayPlanner" href="https://tallen1985.github.io/05-Homework-Day-Planner/" target="_blank">
-                    <div >
-                        <div>
-                            <h2>Day Planner</h2>
-                            <p>JQuery/BootStrap/MomentJS/LocalStorage</p>
+                        <div class="links">
+                                <h3>A project allowing user to enter a location and get current weather as well as 5 day forecast. Shows proficiency in Javascript, CSS frameworks, Server-side API rendering and localStorage utilization.</h3>
+                                <a class="cardLink" href="https://tallen1985.github.io/06-Homework-Weather-Dashboard/" target="_blank">Live Site</a>
+                                <a class="cardLink" href="https://github.com/tallen1985/06-Homework-Weather-Dashboard" target="_blank">Github Repo</a>
                         </div>
+                </div>
+                <div class="workCard small" id="dayPlanner" data-active=false>
+                    <div class="cardDescription">
+                        <h2>Day Planner</h2>
+                        <p>JQuery/BootStrap/MomentJS/LocalStorage</p>
                     </div>
-                </a>
-                <a class="workCard small" id="codeQuiz" href="https://tallen1985.github.io/04-Homework-Code-Quiz/" target="_blank">
-                    <div >
-                        <div>
-                            <h2>Code Quiz</h2>
-                            <p>Javascript/DOM Manipulation/Storage</p>
-                        </div>
+                    <div class="links">
+                        <h3>Designed to allow a user to enter tasks needed throughout the day.  Will also change color depending on time of day.  Tasks persist through closing browser, but are deleted at the end of the day.</h3>
+                        <a class="cardLink" href="https://tallen1985.github.io/05-Homework-Day-Planner/" target="_blank">Live Site</a>
+                        <a class="cardLink" href="https://github.com/tallen1985/05-Homework-Day-Planner/" target="_blank">Github Repo</a>
                     </div>
-                </a>
-                <a class="workCard small" id="refactor" href="https://tallen1985.github.io/01-Homework/" target="_blank">
-                    <div >
-                        <div>
-                            <h2>Refactor</h2>
-                            <p>HTML/CSS/Accessibility</p>
-                        </div>
+                </div>
+                <div class="workCard small" id="codeQuiz" data-active=false>
+                    <div class="cardDescription">
+                        <h2>Code Quiz</h2>
+                        <p>Javascript/DOM Manipulation/Storage</p>
                     </div>
-                </a>
-                <a class="workCard small" id="passwordGenerator" href="https://tallen1985.github.io/03-Javascript-Password-Generator/" target="_blank">
-                    <div >
-                        <div>
-                            <h2>Password Generator</h2>
-                            <p>Javascript/Validation/CSS</p>
-                        </div>
+                    <div class="links">
+                        <h3>A quick quiz created to test knowledge or front-end programming. Composed of a single page that changes dynamically as well as keeping score and running Client-side timers.</h3>
+                        <a class="cardLink" href="https://tallen1985.github.io/04-Homework-Code-Quiz" target="_blank">Live Site</a>
+                        <a class="cardLink" href="https://github.com/tallen1985/04-Homework-Code-Quiz" target="_blank">Github Repo</a>
                     </div>
-                </a>
+                </div>
+                <div class="workCard small" id="refactor" data-active=false>
+                    <div class="cardDescription">
+                        <h2>Refactor</h2>
+                        <p>HTML/CSS/Accessibility</p>
+                    </div>
+                    <div class="links">
+                        <h3>Utilizing Semantic HTML elements and CSS3 principals, this site was repaired and refactored for better Accessibility</h3>
+                        <a class="cardLink" href="https://tallen1985.github.io/01-Homework/" target="_blank">Live Site</a>
+                        <a class="cardLink" href="https://github.com/tallen1985/01-Homework/" target="_blank">Github Repo</a>
+                    </div>
+                </div>
+                <div class="workCard small" id="passwordGenerator" data-active=false>
+                    <div class="cardDescription">
+                        <h2>Password Generator</h2>
+                        <p>Javascript/Validation/CSS</p>
+                    </div>
+                    <div class="links">
+                        <h3>A project designed to prompt user for criteria and then returning a randomly generated password.</h3>
+                        <a class="cardLink" href="https://tallen1985.github.io/03-Javascript-Password-Generator/" target="_blank">Live Site</a>
+                        <a class="cardLink" href="https://github.com/tallen1985/03-Javascript-Password-Generator" target="_blank">Github Repo</a>
+                    </div>
+                </div>
             </div>
         </article>
         <article id="contact">
@@ -112,5 +127,6 @@
     <footer>
         &copy 2021 - Troy Allen
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
