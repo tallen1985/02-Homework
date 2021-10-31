@@ -203,7 +203,14 @@ article {
         color: var(--mainBackground);
     }
 
-    /* Code Quiz Project */
+    #cryptoWallet {
+        background-color: #EDE7D9;
+        background-image: url(../images/cryptoWallet-screenshot.jpg);
+        background-size: 100%;
+        background-position: 50% 15%;;
+        background-repeat: no-repeat;
+        min-width: 300px;
+    }
     #weatherDashboard {
         background-color: #EDE7D9;
         background-image: url(../images/06-Homework-screenshot.jpg);
@@ -234,13 +241,6 @@ article {
         background-size: 140%;
         background-position: 50% 20%;
         background-repeat: no-repeat;
-        min-width: 300px;
-    }
-    /* Refactor Project */
-    #refactor {
-        background-image: url(../images/01-Homework-screenshot.jpg);
-        background-size: 160%;
-        background-position-x: 50%;
         min-width: 300px;
     }
 
