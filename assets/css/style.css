@@ -1,8 +1,8 @@
 /* Root for Variable Declaration */
 :root {
-    --background: #25272E;
-    --foreground: rgb(158,202,204);
-    --mainBackground: rgb(237,237,245);
+    --background: rgb(70, 77, 119);
+    --foreground: #F4EDED;
+    --mainBackground: #F9DB6D;
     --linkBorder: 3px solid;
 }
 /* Tag Selector Styling */
@@ -54,6 +54,8 @@ header {
     header h1 {
         flex: 0 0 350px;
         background-color: var(--foreground);
+        border: 1px solid black;
+        border-radius: 3px;
         color: var(--background);
         padding-left: 10%;
         width: 350px;
@@ -301,6 +303,7 @@ footer{
       margin: 0 auto;
     }
     article {
+        width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -308,6 +311,7 @@ footer{
         text-align: center;
     }
     article .description {
+        width: 90%;
         border: 0;
     }
 }
