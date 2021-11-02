@@ -16,5 +16,5 @@ Create a Personal Portfolio online to showcase pertinant information about you, 
 - Format the page in a responsive way as to conform to multiple user devices.
 
 ## Final Product
-![Portfolio](./assets/images/Portfolio-screenshot.png)
+![Portfolio](./assets/images/Portfolio-Screenshot.png)
     https://tallen1985.github.io/Portfolio
