@@ -1,8 +1,8 @@
 /* Root for Variable Declaration */
 :root {
-    --background: rgb(70, 77, 119);
-    --foreground: #F4EDED;
-    --mainBackground: #F9DB6D;
+    --background: #166088;
+    --foreground: #DBE9EE;
+    --mainBackground: #DBE9EE;
     --linkBorder: 3px solid;
 }
 /* Tag Selector Styling */
