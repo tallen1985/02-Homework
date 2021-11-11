@@ -103,6 +103,10 @@ nav {
     height: 110%;
     margin-left: 20px;
 }
+#accordionSection {
+    display:none;
+    margin-top: 25px;
+}
 /* Article Styling - Each section is a separate article but styled the same*/
 article {
     display: flex;
@@ -314,6 +318,12 @@ footer{
         width: 90%;
         border: 0;
     }
+    #accordionSection {
+        display:block
+    }
+    #nonAccordionSection {
+        display: none;
+    }
 }
 @media screen and (max-width: 674px) {
     header h1 {
@@ -323,6 +333,12 @@ footer{
     }
     .bottomBorderLink {
         padding: 0;
+    }
+    #accordionSection {
+        display:block
+    }
+    #nonAccordionSection {
+        display: none;
     }
 }
 @media (hover:hover) {
