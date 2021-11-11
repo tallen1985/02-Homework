@@ -103,6 +103,10 @@ nav {
     height: 110%;
     margin-left: 20px;
 }
+#accordionSection {
+    display:none;
+    margin-top: 25px;
+}
 /* Article Styling - Each section is a separate article but styled the same*/
 article {
     display: flex;
@@ -192,6 +196,8 @@ article {
         background-color: rgba(158,202,204, 0.9);
     }
     .workCard .links h3 {
+        font-size: 1.0rem;
+        color:black;
         width: 100%;
         text-align: center;
     }
@@ -293,6 +299,10 @@ footer{
     justify-content: center;
 }
 
+.accordion-body {
+    background-color:var(--foreground);
+}
+
 /* Media Queries for smaller screens */
 @media screen and (max-width: 850px) {
     header {
@@ -314,6 +324,12 @@ footer{
         width: 90%;
         border: 0;
     }
+    #accordionSection {
+        display:block
+    }
+    #nonAccordionSection {
+        display: none;
+    }
 }
 @media screen and (max-width: 674px) {
     header h1 {
@@ -323,6 +339,12 @@ footer{
     }
     .bottomBorderLink {
         padding: 0;
+    }
+    #accordionSection {
+        display:block
+    }
+    #nonAccordionSection {
+        display: none;
     }
 }
 @media (hover:hover) {
