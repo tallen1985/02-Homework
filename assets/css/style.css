@@ -196,6 +196,8 @@ article {
         background-color: rgba(158,202,204, 0.9);
     }
     .workCard .links h3 {
+        font-size: 1.0rem;
+        color:black;
         width: 100%;
         text-align: center;
     }
@@ -295,6 +297,10 @@ footer{
     margin: 25px 0;
     align-items: center;
     justify-content: center;
+}
+
+.accordion-body {
+    background-color:var(--foreground);
 }
 
 /* Media Queries for smaller screens */
