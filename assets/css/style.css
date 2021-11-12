@@ -333,6 +333,13 @@ footer{
     #nonAccordionSection {
         display: none;
     }
+    #contactList ul {
+        padding: 0;
+    }
+    #resume.description {
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 674px) {
     header h1 {
