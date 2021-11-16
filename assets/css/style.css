@@ -2,7 +2,7 @@
 :root {
     --background: #166088;
     --foreground: #DBE9EE;
-    --mainBackground: #DBE9EE;
+    --mainBackground: #rgba(219,233,238, .7);
     --linkBorder: 3px solid;
 }
 /* Tag Selector Styling */
@@ -80,19 +80,22 @@ nav {
     }
 
 /* Subtitle Image and Text Styling */
-#subtitle {
+#jumbotron {
+    width: 80%;
+    height: 45vw;
     display: flex;
+    margin: 25px auto;
     justify-content: space-between;
-    align-items: center;
-    height: 200px;
-    background-color: yellow;
-    padding-right: 25px;
     background: url("../images/subtitle.jpg");
     background-position: center bottom;
     background-attachment: fixed;
+    border: 2px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
     #subtitle h2 {
-        background-color: var(--foreground);
+        background-color: var(--mainBackground);
         padding:10px;
     }
 
@@ -100,24 +103,38 @@ nav {
     border: 1px solid darkslategray;
     box-shadow: 3px 3px 3px darkslategray;
     border-radius: 5px;
-    height: 110%;
-    margin-left: 20px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
 }
 #accordionSection {
     display:none;
     margin-top: 25px;
 }
+#nonAccordionSection {
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Article Styling - Each section is a separate article but styled the same*/
 article {
-    display: flex;
+    background-color: var(--foreground);
+    border: 1px solid black;
+    border-radius: 3px;
+    display: none;
     width: 90%;
     margin: 25px auto;
-    align-items:flex-start;
+    padding: 25px 0;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    align-items: center;
 }
     article .headline {
-        width:25%;
-        text-align: right;
-        margin: 0 2%;
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
         color: var(--background);
         
     }
@@ -127,11 +144,12 @@ article {
         justify-content: space-between;
         
         width:75%;
-        border-left: 5px solid black;
         padding-left: 10px;
     }
 
-
+#about {
+    display: flex;
+}
 /* Works Section Styling - Provides basic placeholder style that is
         overruled by specific ID as projects are added */
 .workCard {
@@ -305,6 +323,9 @@ footer{
 
 /* Media Queries for smaller screens */
 @media screen and (max-width: 850px) {
+    #jumbotron {
+        display: none;
+    }
     header {
         height: 120px;
     }
