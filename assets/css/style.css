@@ -119,9 +119,9 @@ nav {
 /* Article Styling - Each section is a separate article but styled the same*/
 article {
     background-color: var(--foreground);
+    display: flex;
     border: 1px solid black;
     border-radius: 3px;
-    display: none;
     width: 90%;
     margin: 25px auto;
     padding: 25px 0;
@@ -130,6 +130,8 @@ article {
     overflow: hidden;
     overflow-y: scroll;
     align-items: center;
+    opacity: 0;
+    transition: all .5s;
 }
     article .headline {
         width: 75%;
@@ -146,7 +148,9 @@ article {
         width:75%;
         padding-left: 10px;
     }
-
+    article .visible {
+        opacity: 1;
+    }
 #about {
     display: flex;
 }
