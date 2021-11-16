@@ -300,14 +300,14 @@ article {
         }
 
 /* Resume Styling */
-#resume a {
+.resumeSection a {
     margin: 0 auto;
     padding:30px 10px 5px 10px;
     border-bottom: var(--linkBorder) var(--background);
     transition: color .7s;
     color: var(--background);
 }
-    #resume img {
+    .resumeSection img {
         height:30px;
     }
 /* Footer Styling */
@@ -319,6 +319,11 @@ footer{
     margin: 25px 0;
     align-items: center;
     justify-content: center;
+}
+footer i {
+    font-size: 2rem;
+    padding: 0 10px;
+    color: var(--foreground);
 }
 
 .accordion-body {
@@ -361,7 +366,7 @@ footer{
     #contactList ul {
         padding: 0;
     }
-    #resume.description {
+    .resumeSection {
         text-align: center;
     }
 
