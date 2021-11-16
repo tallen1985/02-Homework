@@ -227,7 +227,7 @@ article {
         font-size: 1.2rem;
         font-weight: bold;
         text-decoration: none;
-        transition: all .2s ease-in-out;
+        transition: opacity .4s ease-in-out;
     }
     .workCard .cardLink:hover{
         color: var(--mainBackground);
@@ -296,7 +296,7 @@ article {
             color: var(--background);
         }
         #contactList ul li:hover a {
-            color: var(--foreground);
+            color: var(--mainBackground);
         }
 
 /* Resume Styling */
