@@ -334,12 +334,15 @@ footer i {
 }
 
 /* Media Queries for smaller screens */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 915px) {
     #jumbotron {
         display: none;
     }
     header {
         height: 120px;
+    }
+    header div {
+        flex: 1 1 350px;
     }
     header div h3 {
         display: block;
