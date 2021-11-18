@@ -42,7 +42,7 @@ h2 {
 header {
     display: flex;
     background-color: var(--background);
-    border-bottom: 5px solid darkcyan;
+    /* border-bottom: 5px solid darkcyan; */
     align-items: center;
     width: 100%;
     justify-content: space-between;
