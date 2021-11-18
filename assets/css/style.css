@@ -135,7 +135,7 @@ article {
         width: 75%;
         text-align: center;
         margin: 0 auto;
-        color: var(--background);
+        color: darkslategray;
         
     }
     article .description {
