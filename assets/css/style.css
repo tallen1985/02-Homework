@@ -2,27 +2,25 @@
 :root {
     --background: #166088;
     --foreground: #DBE9EE;
-    --mainBackground: #rgba(219,233,238, .7);
+    --mainBackground: rgba(219,233,238, .8);
     --linkBorder: 3px solid;
 }
 /* Tag Selector Styling */
 body {
-    background-color: var(--mainBackground);
-    font-family:Arial, Helvetica, sans-serif;
+    background: url("../images/subtitle.jpg");
+    font-family: 'Montagu Slab', serif;
     font-size: 16px;
-}
-
-p {
-    font-weight: lighter;
 }
 
 
 h1 {
     font-size: 250%;
+    font-weight: 500;
 }
 
 h2 {
     font-size: 150%;
+    font-weight: 500;
 }
 /* Class Selector Styling */
 .bottomBorderLink {
@@ -51,7 +49,7 @@ header {
     flex-wrap: wrap;
     height: 80px;
 }
-    header h1 {
+    header div {
         flex: 0 0 350px;
         background-color: var(--foreground);
         border: 1px solid black;
@@ -59,6 +57,9 @@ header {
         color: var(--background);
         padding-left: 10%;
         width: 350px;
+    }
+    header div h3 {
+        display: none;
     }
 
 /* Navigation Bar Styling */
@@ -86,9 +87,7 @@ nav {
     display: flex;
     margin: 25px auto;
     justify-content: space-between;
-    background: url("../images/subtitle.jpg");
-    background-position: center bottom;
-    background-attachment: fixed;
+    background-color: var(--mainBackground);
     border: 2px solid black;
     border-radius: 3px;
     overflow: hidden;
@@ -112,16 +111,14 @@ nav {
     margin-top: 25px;
 }
 #nonAccordionSection {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
+    overflow-y: scroll;
 }
 
 /* Article Styling - Each section is a separate article but styled the same*/
 article {
-    background-color: var(--foreground);
     display: flex;
-    border: 1px solid black;
-    border-radius: 3px;
     width: 90%;
     margin: 25px auto;
     padding: 25px 0;
@@ -131,7 +128,8 @@ article {
     overflow-y: scroll;
     align-items: center;
     opacity: 0;
-    transition: all .5s;
+    transition: all 1s;
+    color: darkslategray)
 }
     article .headline {
         width: 75%;
@@ -144,9 +142,7 @@ article {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        
         width:75%;
-        padding-left: 10px;
     }
     article .visible {
         opacity: 1;
@@ -163,6 +159,8 @@ article {
     background-image: url(../images/what-is-coding.jpeg);
     height: 150px;
     border: 5px solid var(--foreground);
+    border: 2px solid darkslategray;
+    border-radius: 3px;
 }
     .workCard div {
         background-color: var(--foreground);
@@ -173,6 +171,7 @@ article {
         width: max-content;
         padding: 0 10px;
         z-index: 2;
+        
     }
     .workCard::after {
         position: absolute;
@@ -245,7 +244,7 @@ article {
         background-color: #EDE7D9;
         background-image: url(../images/06-Homework-screenshot.jpg);
         background-size: 100%;
-        background-position: 50% 15%;;
+        background-position: top;
         background-repeat: no-repeat;
         min-width: 300px;
     }
@@ -253,7 +252,7 @@ article {
         background-color: #EDE7D9;
         background-image: url(../images/05-Homework-screenshot.jpg);
         background-size: 100%;
-        background-position: 50% 15%;;
+        background-position: 50% 15%;
         background-repeat: no-repeat;
         min-width: 300px;
     }
@@ -281,31 +280,35 @@ article {
     width: 100%;
     text-align: center;
     justify-content: space-evenly;
-    
+    padding-left: 0;
 
 }
 
     #contactList ul li {
         display: inline-block;
         padding:30px 10px 5px 10px;
-        border-bottom: var(--linkBorder) var(--background);
-        background-image: linear-gradient(to top, var(--background) 50%, var(--mainBackground) 50%);
     }
         #contactList ul li a {
+            text-decoration: none;
             transition: color .7s;
             color: var(--background);
         }
         #contactList ul li:hover a {
-            color: var(--mainBackground);
+            color: darkslategray;
+            border-bottom: var(--linkBorder) darkslategray;
         }
 
 /* Resume Styling */
 .resumeSection a {
     margin: 0 auto;
+    text-decoration: none;
     padding:30px 10px 5px 10px;
-    border-bottom: var(--linkBorder) var(--background);
     transition: color .7s;
     color: var(--background);
+}
+.resumeSection a:hover {
+    color: darkslategray;
+    border-bottom: var(--linkBorder) darkslategray
 }
     .resumeSection img {
         height:30px;
@@ -327,7 +330,7 @@ footer i {
 }
 
 .accordion-body {
-    background-color:var(--foreground);
+    background-color:var(--mainBackground);
 }
 
 /* Media Queries for smaller screens */
@@ -337,6 +340,9 @@ footer i {
     }
     header {
         height: 120px;
+    }
+    header div h3 {
+        display: block;
     }
     header h1,
     header nav {
@@ -372,10 +378,13 @@ footer i {
 
 }
 @media screen and (max-width: 674px) {
-    header h1 {
+    header div {
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+    header div h3 {
+        display: block;
     }
     .bottomBorderLink {
         padding: 0;
