@@ -111,7 +111,7 @@ nav {
     margin-top: 25px;
 }
 #nonAccordionSection {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     overflow-y: scroll;
 }
@@ -119,7 +119,7 @@ nav {
 /* Article Styling - Each section is a separate article but styled the same*/
 article {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 25px auto;
     padding: 25px 0;
     justify-content: flex-start;
