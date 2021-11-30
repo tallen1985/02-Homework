@@ -142,7 +142,7 @@ article {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width:75%;
+        width:85%;
     }
     article .visible {
         opacity: 1;
@@ -256,9 +256,9 @@ article {
         background-repeat: no-repeat;
         min-width: 300px;
     }
-    #codeQuiz {
+    #noteTaker {
         background-color: #EDE7D9;
-        background-image: url(../images/04-Homework-screenshot.jpg);
+        background-image: url(../images/11-Homework-screenshot.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         min-width: 300px;
