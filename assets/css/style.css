@@ -75,6 +75,8 @@ nav {
     nav ul li a {
         transition: color .7s;
         color:var(--foreground);
+        text-decoration: none;
+        letter-spacing: .05em;
     }
     nav ul li:active a{
         color: var(--background);
@@ -164,7 +166,7 @@ article {
 }
     .workCard div {
         background-color: var(--foreground);
-        color:var(--background);
+        color:darkslategray;
         position:absolute;
         bottom: 15px;
         left: 0px;
@@ -190,8 +192,11 @@ article {
         width: 100%;
         height: 250px;
     }
+    .large .cardDescription {
+        width: 70%;
+    }
     .small {
-        flex: 1 0 300px;
+        flex: 1 0 350px;
     }
     .workCard:hover::after{
         transition: opacity .3s;
@@ -248,9 +253,9 @@ article {
         background-repeat: no-repeat;
         min-width: 300px;
     }
-    #dayPlanner {
+    #eCommerceBackend {
         background-color: #EDE7D9;
-        background-image: url(../images/05-Homework-screenshot.jpg);
+        background-image: url(../images/13-Homework-screenshot.jpg);
         background-size: 100%;
         background-position: 50% 15%;
         background-repeat: no-repeat;
@@ -263,16 +268,14 @@ article {
         background-repeat: no-repeat;
         min-width: 300px;
     }
-    /* Password Generator Project */
-    #readmeGenerator {
-        background-color: white;
-        background-image: url(../images/09-Homework-screenshot.jpg);
-        background-size: 140%;
-        background-position: 50% 20%;
-        background-repeat: no-repeat;
-        min-width: 300px;
-    }
-
+.cardDescription {
+    max-width: 80%;
+}
+.cardDescription p {
+    width: 95%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
 /* Contact Section Styling */
 #contactList ul {
     display: flex;
@@ -334,7 +337,7 @@ footer i {
 }
 
 /* Media Queries for smaller screens */
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 950px) {
     #jumbotron {
         display: none;
     }
